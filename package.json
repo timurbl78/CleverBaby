@@ -34,6 +34,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.6.0",
+    "stylelint-config-htmlacademy": "^0.1.4",
     "svgstore": "^3.0.0-2"
   },
   "dependencies": {

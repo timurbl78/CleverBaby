@@ -7,9 +7,12 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="visually-hidden">
+    <include src="build/images/sprite.svg"></include>
+  </div>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <img src="http://placehold.it/143x23" alt="Logo">
+      <img src="images/logo.svg" alt="Logo">
       <nav class="main-navigation">
         <li class="main-navigation__item">
           <a href="#" class="main-navigation__link">Методика</a>
@@ -67,8 +70,9 @@
             </p>
           </div>
         <div class="process__video-block">
-          <h3 class="process__subtitle">Посомтрите, как проходят наши занятия</h3>
-          <img src="http://placehold.it/430x230" alt="video">
+          <h3 class="process__subtitle">Посмотрите, как проходят наши занятия</h3>
+          <video id="video" class="process__video-player" src="video/sample.mp4" poster="images/video-desktop.png" preload="metadata" controls=""></video>
+          <button type="button" id="video-button" class="process__video-button" aria-label="Запустить видео"></button>
         </div>
       </div>
     </section>
@@ -175,56 +179,56 @@
         <ul class="slider__list teachers__list">
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-1@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Kate Smith</p>
               <p class="teachers__country">США</p>
             </div>
           </li>
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-2@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Samuel King</p>
               <p class="teachers__country">США</p>
             </div>
           </li>
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-3@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Nikole Young</p>
               <p class="teachers__country">Канада</p>
             </div>
           </li>
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-4@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Karoline Bush</p>
               <p class="teachers__country">Канада</p>
             </div>
           </li>
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-1@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Kate Smith</p>
               <p class="teachers__country">США</p>
             </div>
           </li>
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-2@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Samuel King</p>
               <p class="teachers__country">США</p>
             </div>
           </li>
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-3@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Nikole Young</p>
               <p class="teachers__country">Канада</p>
             </div>
           </li>
           <li class="slider__item">
             <div class="teachers__item">
-              <img class="teachers__img" src="http://placehold.it/220x220" alt="Teacher's photo">
+              <img class="teachers__img" src="images/teacher-4@1x.jpg" alt="Teacher's photo">
               <p class="teachers__name">Karoline Bush</p>
               <p class="teachers__country">Канада</p>
             </div>
@@ -279,20 +283,32 @@
           <p class="contacts__subtitle">Мы в соцсетях:</p>
           <ul class="contacts__social-list">
             <li class="contacts__social-item">
-              <a href="#" aria-label="Мы в Facebook"></a>
+              <a href="#" aria-label="Мы в Facebook">
+                <svg width="6" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
             </li>
             <li class="contacts__social-item">
-              <a href="#" aria-label="Мы в VKontakte"></a>
+              <a href="#" aria-label="Мы в VKontakte">
+                <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="contacts__social-item">
-              <a href="#" aria-label="Мы в Instagram"></a>
+              <a href="#" aria-label="Мы в Instagram">
+                <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="contacts__map-wrapper">
         <section class="map">
-          <img src="http://placehold.it/1365x610" alt="Map">
+          <img src="images/map-layer-desktop@1x.jpg" alt="Map">
         </section>
       </div>
     </section>

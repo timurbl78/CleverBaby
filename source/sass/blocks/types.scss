@@ -1,0 +1,49 @@
+@import "../global/variables.scss";
+
+.types {
+  width: 100%;
+}
+
+.types__wrapper {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 $desktop-padding;
+
+  background: url("../../images/laughing-girl-desktop.png") no-repeat center;
+}
+
+.types__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.types__item {
+  width: 50%;
+
+  &--first {
+    margin-top: 81px;
+    padding-right: 166px;
+  }
+
+  &--second {
+    margin-top: 35px;
+    padding-left: 197px;
+  }
+
+  &--third {
+    margin-top: 185px;
+    padding-right: 166px;
+  }
+
+  &--fourth {
+    margin-top: 160px;
+    padding-left: 197px;
+  }
+}
+
+.types__text {
+  margin: 0;
+}

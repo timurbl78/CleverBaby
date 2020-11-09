@@ -1,3 +1,10 @@
-
+// global
 @import "./global/base.scss";
 @import "./global/variables.scss";
+// blocks header
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+// blocks main
+@import "./blocks/join.scss";
+@import "./blocks/process.scss";
+@import "./blocks/types.scss";

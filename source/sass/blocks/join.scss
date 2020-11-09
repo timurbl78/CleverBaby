@@ -1,0 +1,35 @@
+@import "../global/variables.scss";
+
+.join {
+  width: 100%;
+  background: url("../../images/background-main-desktop.png") no-repeat;
+  background-size: cover;
+}
+
+.join__wrapper {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 135px $desktop-padding 160px;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .join {
+    background: url("../../images/background-main-tablet.png") no-repeat;
+  }
+
+  .join__wrapper {
+    width: $tablet-width;
+    padding: 90px $tablet-padding 133px;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .join {
+    background: url("../../images/background-main-mobile.png") no-repeat;
+  }
+
+  .join__wrapper {
+    width: $mobile-width;
+    padding: 60px 25px;
+  }
+}

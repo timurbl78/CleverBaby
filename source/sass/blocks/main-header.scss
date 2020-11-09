@@ -1,0 +1,36 @@
+@import "../global/variables.scss";
+
+.main-header {
+  height: 103px;
+}
+
+.main-header__wrapper {
+  width: $desktop-width;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@media (max-width: $desktop-width - 1) {
+  .main-header {
+    height: auto;
+  }
+
+  .main-header__wrapper {
+    width: $tablet-width;
+    padding: 30px 45px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .main-header__wrapper {
+    width: $mobile-width;
+    padding: 30px 15px;
+  }
+}

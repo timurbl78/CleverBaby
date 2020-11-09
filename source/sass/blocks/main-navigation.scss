@@ -1,0 +1,53 @@
+@import "../global/variables.scss";
+
+.main-navigation {
+  width: 800px;
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation__link {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.4rem;
+  padding: 10px;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .main-navigation {
+    width: 100%;
+  }
+
+  .main-navigation__list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-navigation__link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: $black;
+    padding: 15px 0;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .main-navigation__link {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+}

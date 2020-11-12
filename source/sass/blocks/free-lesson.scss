@@ -1,0 +1,44 @@
+@import "../global/variables.scss";
+
+.free-lesson {
+  width: 100%;
+}
+
+.free-lesson__wrapper {
+  width: 500px;
+  margin: 100px auto;
+
+  text-align: center;
+}
+
+.free-lesson__title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.free-lesson__text {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+@media (max-width: $desktop-width - 1) {
+  .free-lesson__title {
+    margin-top: 20px;
+  }
+
+  .free-lesson__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .free-lesson__wrapper {
+    width: 240px;
+  }
+
+  .free-lesson__title {
+    margin-top: 0;
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,54 @@
+@import "../global/variables.scss";
+
+.contacts {
+  width: 100%;
+}
+
+.contacts__wrapper {
+  width: $desktop-width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contacts__info {
+  position: absolute;
+  top: 0;
+  left: $desktop-padding;
+  width: 413px;
+  background-color: red;
+}
+
+.contacts__map-wrapper {
+  padding-top: 70px;
+}
+
+.map__image {
+  width: 100%;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .contacts__wrapper {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 $tablet-padding;
+  }
+
+  .contacts__info {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .contacts__map-wrapper {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .contacts__wrapper {
+    width: $mobile-width;
+    padding: 0 $mobile-padding;
+  }
+}

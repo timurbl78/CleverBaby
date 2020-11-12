@@ -1,0 +1,30 @@
+@import "../global/variables.scss";
+
+.main-footer {
+  width: 100%;
+}
+
+.main-footer__wrapper {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 $desktop-padding;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $desktop-width - 1) {
+  .main-footer__wrapper {
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+}
+
+
+@media (max-width: $tablet-width - 1) {
+  .main-footer__wrapper {
+    width: $mobile-width;
+    padding: 0 $mobile-padding;
+    display: block;
+  }
+}

@@ -15,6 +15,7 @@
 @media (max-width: $desktop-width - 1) {
   .join {
     background: url("../../images/background-main-tablet.png") no-repeat;
+    background-size: cover;
   }
 
   .join__wrapper {
@@ -26,6 +27,7 @@
 @media (max-width: $tablet-width - 1) {
   .join {
     background: url("../../images/background-main-mobile.png") no-repeat;
+    background-size: cover;
   }
 
   .join__wrapper {
